@@ -505,54 +505,87 @@ const SOURCES_LIST = [
  "Google Books API","Open Library API","Crossref API","DOAB (Open Access Books)",
  "OAPEN Library","OpenAlex","Semantic Scholar","WorldCat",
  // مراكز بحثية أفريقية
- "African Studies Centre Leiden (ASC)","Nordic Africa Institute","Institute of African Studies, Ghana",
- "Council for the Development of Social Science Research in Africa (CODESRIA)",
- "African Economic Research Consortium (AERC)","Institute for Security Studies (ISS) - Pretoria",
- "South African Institute of International Affairs (SAIIA)","Institute for Pan-African Thought and Conversation",
- "African Leadership Centre, King's College London","Centre for Conflict Resolution (CCR) - Cape Town",
- "Institute of Development Studies Nairobi","Makerere Institute of Social Research (MISR)",
- "African Population and Health Research Center (APHRC)","West African Research Center (WARC)",
- "Centre for African Literary Studies, KwaZulu-Natal","Institute for African Studies, Moscow",
- // مراكز بحثية عربية
- "المركز العربي للأبحاث ودراسة السياسات (الدوحة)","مركز دراسات الوحدة العربية (بيروت)",
- "مركز الأهرام للدراسات السياسية والاستراتيجية","معهد الدوحة للدراسات العليا",
- "المركز المغربي للدراسات والأبحاث الاستراتيجية","مركز الجزيرة للدراسات",
- "المركز الديمقراطي العربي","مركز كارنيغي للشرق الأوسط","مركز بروكنجز الدوحة",
- "المعهد المصري للدراسات","مركز البحوث والدراسات السياسية (جامعة القاهرة)",
- "معهد العالم العربي (باريس)","المركز العربي لأبحاث الفضاء الإلكتروني",
- // جامعات أفريقية - دور النشر
- "Cairo University Press","American University in Cairo Press","University of Cape Town Press",
- "Wits University Press (Johannesburg)","Makerere University Press","University of Ghana Publishing",
- "University of Nairobi Press","University of Ibadan Press","Addis Ababa University Press",
- "University of Dar es Salaam Press","University of Pretoria Press","Kwame Nkrumah University Press",
- "Université Cheikh Anta Diop (Dakar) Publications","Bayero University Press (Kano)",
- // دور نشر أفريقية محلية
- "Langaa Research & Publishing (Cameroon)","Mkuki na Nyota Publishers (Tanzania)",
- "NISC (Pty) Ltd (South Africa)","Jacana Media (South Africa)","Cassava Republic Press (Nigeria)",
- "Kwani? (Kenya)","African Books Collective (ABC)","Sefsafa Publishing House (Cairo)",
- "Africultures (Paris/Senegal)","Africa World Press","East African Educational Publishers",
- // دور نشر عربية محلية
- "دار الشروق (مصر)","الهيئة المصرية العامة للكتاب","دار المعارف (مصر)",
- "دار الساقي (بيروت)","دار الآداب (بيروت)","دار النهار (بيروت)","دار الفارابي (بيروت)",
- "المؤسسة العربية للدراسات والنشر","دار الطليعة (بيروت)","دار رياض الريس",
- "دار الجمل (ألمانيا/بيروت)","دار التنوير (تونس/مصر/لبنان)","دار محمد علي (تونس)",
- "أفريقيا الشرق (المغرب)","دار أبي رقراق (المغرب)","منشورات الزمن (المغرب)",
- "دار توبقال (المغرب)","دار الجديد (بيروت)","دار ابن النديم (الجزائر)",
- "منشورات الجمل (ألمانيا)","دار الرافدين (بيروت/بغداد)","دار الحوار (سوريا)",
- "دار الينابيع (دمشق)","دار الفكر (دمشق)","دار الحصاد (دمشق)",
- "الأهلية للنشر والتوزيع (الأردن)","دار الشروق (الأردن)","دار ورد (الأردن)",
- "دار الكتاب العربي (بيروت)","الدار العربية للعلوم ناشرون","دار الكتب العلمية (بيروت)",
- "مدارات للأبحاث والنشر (القاهرة)","دار العين للنشر (القاهرة)","دار ميريت (القاهرة)",
- "دار الكرمة (القاهرة)","دار نهضة مصر","دار الفكر العربي (القاهرة)",
- // ناشرون دوليون متخصصون
- "Oxford University Press (African Studies)","Cambridge University Press (Middle East Studies)",
- "Pluto Press","Zed Books","I.B. Tauris","Hurst Publishers","James Currey (Boydell & Brewer)",
- "Lynne Rienner Publishers","Palgrave Macmillan (African Studies)",
- // ناشرون فرنسيون متخصصون
- "Karthala","La Découverte","L'Harmattan","CNRS Éditions","Éditions de l'EHESS",
- "Presses de Sciences Po","Maisonneuve & Larose","Éditions du Seuil",
- // منصات أكاديمية
- "JSTOR","Project MUSE","OpenEdition Books","Cairn.info","SAGE Publications"
+"African Studies Centre Leiden (ASC)","Nordic Africa Institute","Institute of African Studies, Ghana",
+"Council for the Development of Social Science Research in Africa (CODESRIA)",
+"African Economic Research Consortium (AERC)","Institute for Security Studies (ISS) - Pretoria",
+"South African Institute of International Affairs (SAIIA)","Institute for Pan-African Thought and Conversation",
+"African Leadership Centre, King's College London","Centre for Conflict Resolution (CCR) - Cape Town",
+"Institute of Development Studies Nairobi","Makerere Institute of Social Research (MISR)",
+"African Population and Health Research Center (APHRC)","West African Research Center (WARC)",
+"Centre for African Literary Studies, KwaZulu-Natal","Institute for African Studies, Moscow",
+"African Centre for the Study of the United States (ACSUS)","Centre for African Studies, University of Cape Town",
+"Centre for African Studies, University of Edinburgh","Centre for Africa Studies, University of the Free State",
+"Institute for Global Dialogue (IGD) - South Africa","African Centre for Migration & Society (ACMS)",
+"Centre for the Study of Governance Innovation (GovInn)","Institute of African Affairs (IAA) - Hamburg",
+"Centre for African Studies, SOAS University of London","Institute for Peace and Security Studies (IPSS) - Addis Ababa",
+
+// مراكز بحثية عربية
+"المركز العربي للأبحاث ودراسة السياسات (الدوحة)","مركز دراسات الوحدة العربية (بيروت)",
+"مركز الأهرام للدراسات السياسية والاستراتيجية","معهد الدوحة للدراسات العليا",
+"المركز المغربي للدراسات والأبحاث الاستراتيجية","مركز الجزيرة للدراسات",
+"المركز الديمقراطي العربي","مركز كارنيغي للشرق الأوسط","مركز بروكنجز الدوحة",
+"المعهد المصري للدراسات","مركز البحوث والدراسات السياسية (جامعة القاهرة)",
+"معهد العالم العربي (باريس)","المركز العربي لأبحاث الفضاء الإلكتروني",
+"المركز العربي للبحوث القانونية والقضائية (بيروت)","المعهد العربي للتخطيط (الكويت)",
+"مركز الإمارات للدراسات والبحوث الاستراتيجية","مركز البحرين للدراسات الاستراتيجية والدولية والطاقة (دراسات)",
+"مركز دراسات الشرق الأوسط (الأردن)","مركز ابن خلدون للدراسات الإنمائية",
+"مركز مدى الكرمل (حيفا)","المعهد الملكي للدراسات الاستراتيجية (المغرب)",
+
+// جامعات أفريقية - دور النشر
+"Cairo University Press","American University in Cairo Press","University of Cape Town Press",
+"Wits University Press (Johannesburg)","Makerere University Press","University of Ghana Publishing",
+"University of Nairobi Press","University of Ibadan Press","Addis Ababa University Press",
+"University of Dar es Salaam Press","University of Pretoria Press","Kwame Nkrumah University Press",
+"Université Cheikh Anta Diop (Dakar) Publications","Bayero University Press (Kano)",
+"Rhodes University Press","Stellenbosch University Press",
+"University of Zambia Press","University of Zimbabwe Publications",
+"Ahmadu Bello University Press","University of Rwanda Press",
+
+// دور نشر أفريقية محلية
+"Langaa Research & Publishing (Cameroon)","Mkuki na Nyota Publishers (Tanzania)",
+"NISC (Pty) Ltd (South Africa)","Jacana Media (South Africa)","Cassava Republic Press (Nigeria)",
+"Kwani? (Kenya)","African Books Collective (ABC)","Sefsafa Publishing House (Cairo)",
+"Africultures (Paris/Senegal)","Africa World Press","East African Educational Publishers",
+"Blackbird Books (South Africa)","Modjaji Books (South Africa)",
+"Huza Press (Rwanda)","Ouida Books (Nigeria)",
+"Sub-Saharan Publishers (Ghana)","Femrite Publications (Uganda)",
+
+// دور نشر عربية محلية
+"دار الشروق (مصر)","الهيئة المصرية العامة للكتاب","دار المعارف (مصر)",
+"دار الساقي (بيروت)","دار الآداب (بيروت)","دار النهار (بيروت)","دار الفارابي (بيروت)",
+"المؤسسة العربية للدراسات والنشر","دار الطليعة (بيروت)","دار رياض الريس",
+"دار الجمل (ألمانيا/بيروت)","دار التنوير (تونس/مصر/لبنان)","دار محمد علي (تونس)",
+"أفريقيا الشرق (المغرب)","دار أبي رقراق (المغرب)","منشورات الزمن (المغرب)",
+"دار توبقال (المغرب)","دار الجديد (بيروت)","دار ابن النديم (الجزائر)",
+"منشورات الجمل (ألمانيا)","دار الرافدين (بيروت/بغداد)","دار الحوار (سوريا)",
+"دار الينابيع (دمشق)","دار الفكر (دمشق)","دار الحصاد (دمشق)",
+"الأهلية للنشر والتوزيع (الأردن)","دار الشروق (الأردن)","دار ورد (الأردن)",
+"دار الكتاب العربي (بيروت)","الدار العربية للعلوم ناشرون","دار الكتب العلمية (بيروت)",
+"مدارات للأبحاث والنشر (القاهرة)","دار العين للنشر (القاهرة)","دار ميريت (القاهرة)",
+"دار الكرمة (القاهرة)","دار نهضة مصر","دار الفكر العربي (القاهرة)",
+"دار المتوسط (إيطاليا/العراق)","دار مسكيلياني (تونس)",
+"دار سؤال (لبنان)","دار خطوط وظلال (الأردن)",
+"دار نينوى (دمشق)","دار فضاءات (الأردن)",
+
+// ناشرون دوليون متخصصون
+"Oxford University Press (African Studies)","Cambridge University Press (Middle East Studies)",
+"Pluto Press","Zed Books","I.B. Tauris","Hurst Publishers","James Currey (Boydell & Brewer)",
+"Lynne Rienner Publishers","Palgrave Macmillan (African Studies)",
+"Brill (African & Middle Eastern Studies)","Routledge (Africa & Middle East)",
+"De Gruyter (African Studies)","Indiana University Press (African Studies)",
+"Ohio University Press (Africa Series)",
+
+// ناشرون فرنسيون متخصصون
+"Karthala","La Découverte","L'Harmattan","CNRS Éditions","Éditions de l'EHESS",
+"Presses de Sciences Po","Maisonneuve & Larose","Éditions du Seuil",
+"Actes Sud (Sindbad)","Gallimard (Bibliothèque des sciences humaines)",
+"Presses Universitaires de France (PUF)","Présence Africaine",
+
+// منصات أكاديمية
+"JSTOR","Project MUSE","OpenEdition Books","Cairn.info","SAGE Publications",
+"Taylor & Francis Online","SpringerLink","ScienceDirect",
+"African Journals Online (AJOL)","Directory of Open Access Books (DOAB)",
+"Google Scholar","Academia.edu"
 ];
 
 // ─── استعلامات البحث الموسّعة ───
